@@ -1,11 +1,11 @@
-About scriptengine-tasks-hpc
-============================
+About scriptengine-tasks-hpc-feedstock
+======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scriptengine-tasks-hpc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/uwefladrich/scriptengine-tasks-hpc
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scriptengine-tasks-hpc-feedstock/blob/main/LICENSE.txt)
 
 Summary: ScriptEngine tasks you may need on HPC systems
 
