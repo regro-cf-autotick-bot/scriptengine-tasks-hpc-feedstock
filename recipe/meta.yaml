@@ -1,13 +1,13 @@
 {% set name = "scriptengine-tasks-hpc" %}
-{% set version = "0.6.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scriptengine-tasks-hpc-{{ version }}.tar.gz
-  sha256: b6570016867815f08e67b0c0f0d56a43ac3759f0886d48c4007a6007940014fb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 677debc91681095142ea9b35304aa5faea8b9205c80ddb58293627e2d668e4bc
 
 build:
   noarch: python
@@ -16,15 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
+    - setuptools >=60
   run:
-    - python >=3.6
-    - scriptengine >=0.8.0
+    - python >=3.8
+    - scriptengine >=1.0.0
 
 test:
   imports:
-    - scriptengine_hpc
+    - hpctasks.module
+    - hpctasks.slurm
   commands:
     - pip check
   requires:
@@ -39,4 +41,3 @@ about:
 extra:
   recipe-maintainers:
     - uwefladrich
-    - zklaus
