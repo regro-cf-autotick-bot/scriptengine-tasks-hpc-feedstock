@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - scriptengine >=0.8.0
+    - scriptengine >=1.0.0
 
 test:
   imports:
