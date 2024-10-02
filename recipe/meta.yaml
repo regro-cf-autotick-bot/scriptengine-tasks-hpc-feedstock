@@ -1,13 +1,13 @@
 {% set name = "scriptengine-tasks-hpc" %}
-{% set version = "0.6.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scriptengine-tasks-hpc-{{ version }}.tar.gz
-  sha256: b6570016867815f08e67b0c0f0d56a43ac3759f0886d48c4007a6007940014fb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 677debc91681095142ea9b35304aa5faea8b9205c80ddb58293627e2d668e4bc
 
 build:
   noarch: python
