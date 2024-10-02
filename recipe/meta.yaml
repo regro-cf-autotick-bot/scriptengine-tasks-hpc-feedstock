@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - setuptoos >=60
+    - setuptools >=60
   run:
     - python >=3.8
     - scriptengine >=1.0.0
