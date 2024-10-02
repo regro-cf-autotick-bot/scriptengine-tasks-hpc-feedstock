@@ -25,7 +25,8 @@ requirements:
 
 test:
   imports:
-    - scriptengine_hpc
+    - hpctasks.module
+    - hpctasks.slurm
   commands:
     - pip check
   requires:
